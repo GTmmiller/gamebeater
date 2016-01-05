@@ -1,0 +1,147 @@
+*
+1
+*
+Commodore PET
+Odyssey
+Pinball
+Redemption
+*
+2
+*
+Adventurevision
+APF-*1000/IM
+Apple II
+Arcadia 2001
+Astrocade
+Atari 2600
+Atari 5200
+Atari 8-bit
+BBC Micro
+Cassette Vision
+Channel F
+Colecovision
+CreatiVision
+EACA Colour Genie 2000
+Intellivision
+Interton VC4000
+Mattel Aquarius
+Microvision
+NEC PC88
+Odyssey^2
+RCA Studio II
+SG-1000
+Sord M5
+Tandy Color Computer
+TI-99/4A
+Tomy Tutor
+Vectrex
+VIC-20
+*
+3
+*
+Amstrad CPC
+Atari 7800
+Atari ST
+BBS Door
+Commodore 64
+Famicom Disk System
+FM-7
+MSX
+NEC PC98
+NES
+Oric 1/Atmos
+Sega Master System
+Sharp X1
+Sinclair ZX81/Spectrum
+Super Cassette Vision
+*
+4
+*
+Acorn Archimedes
+Amiga
+CD-I
+Game Boy
+GameGear
+Genesis
+LaserActive
+Lynx
+Neo-Geo CD
+NeoGeo
+OS/2
+Sega 32X
+Sega CD
+Sharp X68000
+Super Nintendo
+SuperVision
+Turbo CD
+TurboGrafx-16
+*
+5
+*
+3DO
+Amiga CD32
+Bandai Pippin
+Casio Loopy
+CPS Changer
+FM Towns
+Game Boy Color
+Game.com
+Jaguar
+Jaguar CD
+Nintendo 64
+Nintendo 64DD
+Palm OS Classic
+PC-FX
+Playdia
+PlayStation
+Saturn
+Virtual Boy
+WonderSwan
+*
+6
+*
+Dreamcast
+DVD Player
+e-Reader
+Game Boy Advance
+GameCube
+Gizmondo
+GP32
+N-Gage
+NeoGeo Pocket Color
+Nuon
+PlayStation 2
+WonderSwan Color
+Xbox
+Zeebo
+Zodiac
+*
+7
+*
+BlackBerry
+DS
+Flash
+Mobile
+Palm webOS
+PlayStation 3
+PSP
+Wii
+Xbox 360
+*
+8
+*
+3DS
+Amazon Fire TV
+Android
+Arcade Games
+iOS (iPhone/iPad)
+Linux
+Macintosh
+Online/Browser
+Ouya
+PC
+PlayStation 4
+PlayStation Vita
+Wii U
+Windows Mobile
+Xbox One

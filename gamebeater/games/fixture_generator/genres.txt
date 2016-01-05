@@ -1,0 +1,59 @@
+Beat 'em up
+Fighting
+Maze
+Platformer
+First-person shooter
+Third-person shooter
+Light gun shooter
+Shoot 'em up
+Tactical shooter
+Survival
+Metroidvania
+Stealth
+Survival horror
+Dating simulation
+Graphic adventure
+Escape the room
+Interactive fiction
+Interactive movie
+Visual novel
+MMOFPS
+MMORPG
+MMORTS
+Role-playing
+Action role-playing
+Dungeon crawl
+MUD
+Roguelike
+Tactical role-playing
+Business simulation
+City-building simulation
+Government simulation
+Life simulation
+Digital pet
+God
+Social simulation
+Sports simulation
+4X strategy
+Real-time strategy
+MOBA
+Tower defense
+Time management
+Real-time tactics
+Turn-based strategy
+Turn-based tactics
+Artillery
+Wargame
+Amateur flight simulation
+Combat flight simulation
+Space flight simulation
+Racing
+Kart racing
+Sim racing
+Submarine simulation
+Train simulation
+Rhythm
+Party
+Programming
+Puzzle
+Tile-matching

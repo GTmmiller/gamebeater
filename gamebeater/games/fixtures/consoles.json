@@ -1,0 +1,986 @@
+[
+  {
+    "model": "games.console",
+    "pk": "Commodore PET",
+    "fields": {
+      "emulatable": false,
+      "generation": 1
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Odyssey",
+    "fields": {
+      "emulatable": false,
+      "generation": 1
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Pinball",
+    "fields": {
+      "emulatable": false,
+      "generation": 1
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Redemption",
+    "fields": {
+      "emulatable": false,
+      "generation": 1
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Adventurevision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "APF-*1000/IM",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Apple II",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Arcadia 2001",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Astrocade",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Atari 2600",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Atari 5200",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Atari 8-bit",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "BBC Micro",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Cassette Vision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Channel F",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Colecovision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "CreatiVision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "EACA Colour Genie 2000",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Intellivision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Interton VC4000",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Mattel Aquarius",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Microvision",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "NEC PC88",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Odyssey^2",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "RCA Studio II",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "SG-1000",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sord M5",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Tandy Color Computer",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "TI-99/4A",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Tomy Tutor",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Vectrex",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "VIC-20",
+    "fields": {
+      "emulatable": false,
+      "generation": 2
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Amstrad CPC",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Atari 7800",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Atari ST",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "BBS Door",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Commodore 64",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Famicom Disk System",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "FM-7",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "MSX",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "NEC PC98",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "NES",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Oric 1/Atmos",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sega Master System",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sharp X1",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sinclair ZX81/Spectrum",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Super Cassette Vision",
+    "fields": {
+      "emulatable": false,
+      "generation": 3
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Acorn Archimedes",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Amiga",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "CD-I",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Game Boy",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "GameGear",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Genesis",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "LaserActive",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Lynx",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Neo-Geo CD",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "NeoGeo",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "OS/2",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sega 32X",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sega CD",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Sharp X68000",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Super Nintendo",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "SuperVision",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Turbo CD",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "TurboGrafx-16",
+    "fields": {
+      "emulatable": false,
+      "generation": 4
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "3DO",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Amiga CD32",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Bandai Pippin",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Casio Loopy",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "CPS Changer",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "FM Towns",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Game Boy Color",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Game.com",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Jaguar",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Jaguar CD",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Nintendo 64",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Nintendo 64DD",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Palm OS Classic",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PC-FX",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Playdia",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PlayStation",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Saturn",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Virtual Boy",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "WonderSwan",
+    "fields": {
+      "emulatable": false,
+      "generation": 5
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Dreamcast",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "DVD Player",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "e-Reader",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Game Boy Advance",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "GameCube",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Gizmondo",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "GP32",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "N-Gage",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "NeoGeo Pocket Color",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Nuon",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PlayStation 2",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "WonderSwan Color",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Xbox",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Zeebo",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Zodiac",
+    "fields": {
+      "emulatable": false,
+      "generation": 6
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "BlackBerry",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "DS",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Flash",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Mobile",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Palm webOS",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PlayStation 3",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PSP",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Wii",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Xbox 360",
+    "fields": {
+      "emulatable": false,
+      "generation": 7
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "3DS",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Amazon Fire TV",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Android",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Arcade Games",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "iOS (iPhone/iPad)",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Linux",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Macintosh",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Online/Browser",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Ouya",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PC",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PlayStation 4",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "PlayStation Vita",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Wii U",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Windows Mobile",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  },
+  {
+    "model": "games.console",
+    "pk": "Xbox One",
+    "fields": {
+      "emulatable": false,
+      "generation": 8
+    }
+  }
+]

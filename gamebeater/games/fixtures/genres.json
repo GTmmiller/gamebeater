@@ -1,0 +1,422 @@
+[
+  {
+    "model": "games.genre",
+    "pk": "Action",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Beat 'em up",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Fighting",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Maze",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Platformer",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "First-person shooter",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Third-person shooter",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Light gun shooter",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Shoot 'em up",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Tactical shooter",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Survival",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Metroidvania",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Stealth",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Survival horror",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Dating simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Graphic adventure",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Escape the room",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Interactive fiction",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Interactive movie",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Visual novel",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "MMOFPS",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "MMORPG",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "MMORTS",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Role-playing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Action role-playing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Dungeon crawl",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "MUD",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Roguelike",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Tactical role-playing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Business simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "City-building simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Government simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Life simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Digital pet",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "God",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Social simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Sports simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "4X strategy",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Real-time strategy",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "MOBA",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Tower defense",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Time management",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Real-time tactics",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Turn-based strategy",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Turn-based tactics",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Artillery",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Wargame",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Amateur flight simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Combat flight simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Space flight simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Racing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Kart racing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Sim racing",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Submarine simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Train simulation",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Rhythm",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Party",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Programming",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Puzzle",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Tile-matching",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  }
+]
