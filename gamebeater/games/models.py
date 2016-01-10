@@ -2,8 +2,6 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-from goals.models import Goal
-
 class Console(models.Model):
 	CURRENT_GEN = 8
 	DEFAULT_EMULATABLE = False
@@ -44,27 +42,6 @@ class Game(models.Model):
 	)
 	genres = models.ManyToManyField(Genre)
 	consoles = models.ManyToManyField(Console)
-	goal = models.OneToOneField(
-		Goal,
-		on_delete=models.CASCADE,
-		default=None
-	)
-	
-	def get_goal_start_time(self):
-		return self.goal.start_time
-	
-	def get_goal_status(self):
-		return self.goal.get_status_display()
-	
-	def get_goal_complete_time(self):
-		return self.goal.complete_time
-	
-	def get_goal_text(self):
-		return self.goal.goal.text
 	
 	def __unicode__(self):
 		return self.title
-
-
-	
-	
