@@ -29,7 +29,7 @@ class Genre(models.Model):
 	)
 	description = models.CharField(
 		max_length = 500,
-		default = DEFAULT_DESCRIPTION 
+		default = DEFAULT_DESCRIPTION
 	)
 	
 	def __unicode__(self):
