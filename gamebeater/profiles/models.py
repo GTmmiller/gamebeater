@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.conf import settings
 from django.db import models
-from games.models import Game, Console
+from games.models import Game, Platform
 from .utils import CompletionStatus
 
 class GamebeaterProfile(models.Model):
@@ -37,8 +37,8 @@ class GameOwnership(models.Model):
 		Game,
 		on_delete=models.CASCADE
 	)
-	console = models.ForeignKey(
-		Console,
+	platform = models.ForeignKey(
+		Platform,
 		on_delete=models.CASCADE
 	)
 	ownership_status = models.CharField(

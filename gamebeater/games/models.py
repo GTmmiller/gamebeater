@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-class Console(models.Model):
+class Platform(models.Model):
 	CURRENT_GEN = 8
 	DEFAULT_EMULATABLE = False
 
@@ -41,7 +41,7 @@ class Game(models.Model):
 		unique=True
 	)
 	genres = models.ManyToManyField(Genre)
-	consoles = models.ManyToManyField(Console)
+	platforms = models.ManyToManyField(Platform)
 	
 	def __unicode__(self):
 		return self.title

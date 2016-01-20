@@ -6,7 +6,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Joust"
@@ -19,7 +19,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Mappy"
@@ -32,7 +32,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Bubble Bobble"
@@ -45,7 +45,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "Android",
@@ -67,7 +67,7 @@
       "genres": [
         "Maze"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "Android",
@@ -87,7 +87,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation Vita"
       ],
       "title": "TxK"
@@ -100,7 +100,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "NES",
         "Game Boy Advance"
       ],
@@ -114,7 +114,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "Game Boy Advance"
       ],
@@ -128,7 +128,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Wii U"
       ],
       "title": "Donkey Kong Country: Tropical Freeze"
@@ -141,7 +141,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Sega CD",
         "PlayStation 3",
         "Xbox 360",
@@ -162,7 +162,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "PlayStation 3",
         "PSP",
@@ -179,7 +179,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox 360",
         "Linux",
         "Macintosh",
@@ -198,7 +198,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Shinobi"
@@ -211,7 +211,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Strider"
@@ -225,7 +225,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "NES",
         "3DS",
         "Wii U"
@@ -240,7 +240,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "PSP",
         "Xbox 360",
@@ -259,7 +259,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "NES",
         "PlayStation"
       ],
@@ -274,7 +274,7 @@
         "Platformer",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "PC-FX",
         "Wii",
         "Wii U"
@@ -289,7 +289,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "Wii U"
       ],
@@ -304,7 +304,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "GameCube"
       ],
@@ -319,7 +319,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Volgarr the Viking"
@@ -333,7 +333,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "3DS",
         "Amazon Fire TV",
@@ -356,7 +356,7 @@
         "Action",
         "Cinematic platform"
       ],
-      "consoles": [
+      "platforms": [
         "Apple II",
         "Amiga"
       ],
@@ -371,7 +371,7 @@
         "Action",
         "Cinematic platform"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Another World"
@@ -384,7 +384,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Sega Master System",
         "GameGear",
         "TurboGrafx-16",
@@ -403,7 +403,7 @@
         "Metroidvania",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo"
       ],
       "title": "Super Metroid"
@@ -417,7 +417,7 @@
         "Metroidvania",
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Saturn",
         "PlayStation 3",
@@ -437,7 +437,7 @@
         "Platformer",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Cave Story"
@@ -451,7 +451,7 @@
         "Platformer",
         "Roguelike"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Linux",
         "Macintosh",
@@ -471,7 +471,7 @@
         "Beat 'em up",
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox 360",
         "iOS (iPhone/iPad)",
         "Linux",
@@ -490,7 +490,7 @@
         "Platformer",
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "MSX",
         "NES"
       ],
@@ -505,7 +505,7 @@
         "Shoot 'em up",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "NES"
       ],
       "title": "The Guardian Legend"
@@ -518,7 +518,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "NES",
         "3DS"
       ],
@@ -532,7 +532,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Game Boy",
         "Game Boy Color"
       ],
@@ -546,7 +546,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo"
       ],
       "title": "Terranigma"
@@ -559,7 +559,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo"
       ],
       "title": "Seiken Densetsu 3"
@@ -572,7 +572,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Nintendo 64",
         "GameCube",
         "Wii"
@@ -587,7 +587,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PSP",
         "PC"
       ],
@@ -601,7 +601,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation"
       ],
       "title": "Mega Man Legends"
@@ -614,7 +614,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Dreamcast",
         "PC"
@@ -629,7 +629,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "PlayStation 3",
         "Wii"
@@ -644,7 +644,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "PlayStation 3"
       ],
@@ -658,7 +658,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360"
       ],
@@ -672,7 +672,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 4"
       ],
       "title": "Bloodborne"
@@ -687,7 +687,7 @@
         "Life simulation",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast",
         "Xbox"
       ],
@@ -702,7 +702,7 @@
         "Beat 'em up",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3"
       ],
       "title": "Yakuza 4"
@@ -716,7 +716,7 @@
         "Third-person shooter",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360"
       ],
@@ -730,7 +730,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "PlayStation 3",
         "PlayStation 4",
@@ -746,7 +746,7 @@
       "genres": [
         "Run and gun"
       ],
-      "consoles": [
+      "platforms": [
         "Amstrad CPC",
         "Atari ST",
         "Commodore 64",
@@ -763,7 +763,7 @@
       "genres": [
         "Run and gun"
       ],
-      "consoles": [
+      "platforms": [
         "GameGear",
         "Genesis",
         "3DS"
@@ -778,7 +778,7 @@
       "genres": [
         "Run and gun"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Shock Troopers"
@@ -791,7 +791,7 @@
       "genres": [
         "Run and gun"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Metal Slug 3"
@@ -805,7 +805,7 @@
         "Action",
         "Top-down shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Android",
         "Linux",
@@ -824,7 +824,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation"
       ],
       "title": "Fantasy Zone II DX"
@@ -837,7 +837,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "PSP"
       ],
@@ -851,7 +851,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Saturn",
         "PSP",
@@ -867,7 +867,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Genesis",
         "Wii"
       ],
@@ -881,7 +881,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "PlayStation 3",
         "PSP",
@@ -898,7 +898,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn",
         "Arcade Games"
       ],
@@ -912,7 +912,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn",
         "Arcade Games"
       ],
@@ -926,7 +926,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast",
         "GameCube",
         "Arcade Games",
@@ -945,7 +945,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox 360",
         "Arcade Games",
         "iOS (iPhone/iPad)"
@@ -961,7 +961,7 @@
         "Third-person shooter",
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Space Harrier"
@@ -974,7 +974,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Wii",
         "Wii U"
       ],
@@ -988,7 +988,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Saturn",
         "PlayStation 3",
@@ -1006,7 +1006,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Saturn",
         "Dreamcast",
@@ -1027,7 +1027,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast",
         "PlayStation 2",
         "Xbox",
@@ -1045,7 +1045,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "Neo-Geo CD",
         "NeoGeo",
         "Dreamcast",
@@ -1063,7 +1063,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "NeoGeo",
         "Dreamcast",
         "Xbox 360",
@@ -1082,7 +1082,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "NeoGeo",
         "Dreamcast",
         "PlayStation 2",
@@ -1103,7 +1103,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "PlayStation 3",
         "Wii",
@@ -1120,7 +1120,7 @@
         "Fighting",
         "Party"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube"
       ],
       "title": "Super Smash Bros. Melee"
@@ -1133,7 +1133,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 2",
         "Xbox",
@@ -1151,7 +1151,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "Arcade Games"
@@ -1166,7 +1166,7 @@
       "genres": [
         "Beat 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Streets of Rage 2"
@@ -1179,7 +1179,7 @@
       "genres": [
         "Beat 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Violent Storm"
@@ -1192,7 +1192,7 @@
       "genres": [
         "Beat 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Alien vs. Predator"
@@ -1205,7 +1205,7 @@
       "genres": [
         "Beat 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Game Boy Advance"
       ],
       "title": "Double Dragon Advance"
@@ -1219,7 +1219,7 @@
         "Beat 'em up",
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn"
       ],
       "title": "Guardian Heros"
@@ -1232,7 +1232,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn",
         "PlayStation 2",
         "PlayStation 3",
@@ -1249,7 +1249,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation"
       ],
       "title": "Crash Bandicoot: Warped"
@@ -1262,7 +1262,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "Xbox",
         "Linux",
@@ -1279,7 +1279,7 @@
       "genres": [
         "Platformer"
       ],
-      "consoles": [
+      "platforms": [
         "Wii",
         "Wii U"
       ],
@@ -1293,7 +1293,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox"
       ],
       "title": "Ninja Gaiden Black"
@@ -1306,7 +1306,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox"
       ],
       "title": "Otogi 2: Immortal Warriors"
@@ -1320,7 +1320,7 @@
         "Beat 'em up",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2"
       ],
       "title": "God Hand"
@@ -1333,7 +1333,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3"
       ],
       "title": "Metal Gear Rising: Revengeance"
@@ -1346,7 +1346,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Wii U"
       ],
       "title": "Bayonetta 2"
@@ -1359,7 +1359,7 @@
       "genres": [
         "Interactive fiction"
       ],
-      "consoles": [
+      "platforms": [
         "Apple II",
         "Atari ST",
         "Amiga",
@@ -1375,7 +1375,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Monkey Island II: LeChuck's Revenge"
@@ -1388,7 +1388,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Maniac Mansion: Day of the Tentacle"
@@ -1401,7 +1401,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "Android",
         "iOS (iPhone/iPad)",
         "Linux",
@@ -1420,7 +1420,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "NEC PC98",
         "Amiga",
         "Macintosh",
@@ -1437,7 +1437,7 @@
         "Graphic adventure",
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Quest for Glory: Shadows of Darkness"
@@ -1450,7 +1450,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -1464,7 +1464,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "Macintosh",
         "PC"
@@ -1479,7 +1479,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "Android",
         "iOS (iPhone/iPad)",
         "PC"
@@ -1494,7 +1494,7 @@
       "genres": [
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "Xbox",
         "Xbox 360",
         "PC"
@@ -1512,7 +1512,7 @@
         "Visual novel",
         "Life simulation"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -1528,7 +1528,7 @@
         "Interactive movie",
         "Visual novel"
       ],
-      "consoles": [
+      "platforms": [
         "Sega CD",
         "PlayStation",
         "Saturn"
@@ -1544,7 +1544,7 @@
         "Visual novel",
         "Puzzle"
       ],
-      "consoles": [
+      "platforms": [
         "DS",
         "iOS (iPhone/iPad)"
       ],
@@ -1558,7 +1558,7 @@
       "genres": [
         "Visual novel"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Steins;Gate"
@@ -1572,7 +1572,7 @@
         "Escape the room",
         "Visual novel"
       ],
-      "consoles": [
+      "platforms": [
         "DS",
         "iOS (iPhone/iPad)"
       ],
@@ -1587,7 +1587,7 @@
         "Interactive movie",
         "Visual novel"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation Vita"
       ],
       "title": "Danganronpa 2"
@@ -1601,7 +1601,7 @@
         "Third-person shooter",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation"
       ],
       "title": "Silent Hill"
@@ -1614,7 +1614,7 @@
       "genres": [
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "Linux",
         "Macintosh",
         "PC"
@@ -1629,7 +1629,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Ultima VII: The Black Gate"
@@ -1642,7 +1642,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Wizardry VII: Crusaders of the Dark Savant"
@@ -1655,7 +1655,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Realms of Arkania: Star Trail"
@@ -1668,7 +1668,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -1682,7 +1682,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Fallout 2"
@@ -1695,7 +1695,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Linux",
         "Macintosh",
         "PC"
@@ -1710,7 +1710,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Arcanum"
@@ -1723,7 +1723,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Baldur's Gate II"
@@ -1736,7 +1736,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Star Wars Knights of the Old Republic II: The Sith Lords"
@@ -1749,7 +1749,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC",
         "PlayStation 4",
         "Xbox One"
@@ -1764,7 +1764,7 @@
       "genres": [
         "Dungeon crawl"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Legend of Grimrock II"
@@ -1778,7 +1778,7 @@
         "Shoot 'em up",
         "Graphic adventure"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -1792,7 +1792,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "X-COM: UFO Defense"
@@ -1805,7 +1805,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Jagged Alliance 2"
@@ -1818,7 +1818,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "Game Boy Advance"
       ],
@@ -1832,7 +1832,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Game Boy Advance"
       ],
       "title": "Final Fantasy VI"
@@ -1845,7 +1845,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "Game Boy Advance"
       ],
@@ -1859,7 +1859,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo",
         "PlayStation",
         "DS"
@@ -1874,7 +1874,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Super Nintendo"
       ],
       "title": "Earthbound"
@@ -1887,7 +1887,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "PlayStation 3",
         "PSP",
@@ -1904,7 +1904,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Phantasy Star IV: End of the Millenium"
@@ -1917,7 +1917,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn"
       ],
       "title": "Panzer Dragoon Saga"
@@ -1930,7 +1930,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "PlayStation 3",
         "PlayStation 4",
@@ -1947,7 +1947,7 @@
         "Dating simulation",
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation Vita"
       ],
       "title": "Persona 4 Golden"
@@ -1960,7 +1960,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2"
       ],
       "title": "Breath of Fire: Dragon Quarter"
@@ -1974,7 +1974,7 @@
         "Action role-playing",
         "Rhythm"
       ],
-      "consoles": [
+      "platforms": [
         "DS"
       ],
       "title": "The World Ends With You"
@@ -1987,7 +1987,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "Wii"
       ],
       "title": "Xenoblade Chronicles"
@@ -2000,7 +2000,7 @@
       "genres": [
         "Dungeon crawl"
       ],
-      "consoles": [
+      "platforms": [
         "DS"
       ],
       "title": "Etrian Odyssey III"
@@ -2013,7 +2013,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Barkley Shut Up and Jam Gaiden"
@@ -2026,7 +2026,7 @@
       "genres": [
         "Tactical role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation",
         "PSP"
       ],
@@ -2040,7 +2040,7 @@
       "genres": [
         "Tactical shooter"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube"
       ],
       "title": "Fire Emblem: Path of Radiance"
@@ -2053,7 +2053,7 @@
       "genres": [
         "Turn-based tactics"
       ],
-      "consoles": [
+      "platforms": [
         "DS"
       ],
       "title": "Advance Wars: Days of Ruin"
@@ -2066,7 +2066,7 @@
       "genres": [
         "Turn-based tactics"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2"
       ],
       "title": "Front Mission 5"
@@ -2080,7 +2080,7 @@
         "Real-time tactics",
         "Turn-based tactics"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "PC"
       ],
@@ -2094,7 +2094,7 @@
       "genres": [
         "Real-time tactics"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn",
         "PlayStation 2",
         "PlayStation 3",
@@ -2111,7 +2111,7 @@
       "genres": [
         "Real-time strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Command and Conquer: Red Alert 2"
@@ -2124,7 +2124,7 @@
       "genres": [
         "Real-time strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Starcraft"
@@ -2137,7 +2137,7 @@
       "genres": [
         "Real-time strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Total Annihilation"
@@ -2151,7 +2151,7 @@
         "Real-time strategy",
         "Space flight simulation"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Homeworld"
@@ -2164,7 +2164,7 @@
       "genres": [
         "Real-time strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Company of Heroes"
@@ -2177,7 +2177,7 @@
       "genres": [
         "Real-time strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Age of Empires II"
@@ -2191,7 +2191,7 @@
         "Real-time tactics",
         "Turn-based strategy"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -2205,7 +2205,7 @@
       "genres": [
         "Turn-based strategy"
       ],
-      "consoles": [
+      "platforms": [
         "Linux",
         "Macintosh",
         "PC"
@@ -2220,7 +2220,7 @@
       "genres": [
         "4X strategy"
       ],
-      "consoles": [
+      "platforms": [
         "Linux",
         "Macintosh",
         "PC"
@@ -2235,7 +2235,7 @@
       "genres": [
         "4X strategy"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Civilization IV"
@@ -2248,7 +2248,7 @@
       "genres": [
         "Turn-based strategy"
       ],
-      "consoles": [
+      "platforms": [
         "Linux",
         "Macintosh",
         "PC"
@@ -2264,7 +2264,7 @@
         "4X strategy",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Pirates!"
@@ -2277,7 +2277,7 @@
       "genres": [
         "City-building simulation"
       ],
-      "consoles": [
+      "platforms": [
         "Macintosh",
         "PC"
       ],
@@ -2291,7 +2291,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Doom"
@@ -2304,7 +2304,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Blood"
@@ -2317,7 +2317,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Star Wars Dark Forces II: Jedi Knight"
@@ -2330,7 +2330,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "No One Lives Forever"
@@ -2344,7 +2344,7 @@
         "First-person shooter",
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "Nintendo 64"
       ],
       "title": "Perfect Dark"
@@ -2357,7 +2357,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Half-Life 2"
@@ -2371,7 +2371,7 @@
         "First-person shooter",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "PC"
@@ -2387,7 +2387,7 @@
         "First-person shooter",
         "Tactical shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "SWAT 4"
@@ -2401,7 +2401,7 @@
         "First-person shooter",
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "PC"
@@ -2416,7 +2416,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "PC"
@@ -2432,7 +2432,7 @@
         "First-person shooter",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "System Shock 2"
@@ -2446,7 +2446,7 @@
         "First-person shooter",
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Deus Ex"
@@ -2459,7 +2459,7 @@
       "genres": [
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Theif 2"
@@ -2472,7 +2472,7 @@
       "genres": [
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube"
       ],
       "title": "Metroid Prime"
@@ -2485,7 +2485,7 @@
       "genres": [
         "Role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "The Elder Scrolls: Morrowind"
@@ -2498,7 +2498,7 @@
       "genres": [
         "Action role-playing"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Vampire: The Masquerade: Bloodlines"
@@ -2512,7 +2512,7 @@
         "First-person shooter",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "STALKER: Shadow of Chernobyl"
@@ -2525,7 +2525,7 @@
       "genres": [
         "Third-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Max Payne 2"
@@ -2539,7 +2539,7 @@
         "Third-person shooter",
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 3",
         "Wii",
@@ -2556,7 +2556,7 @@
         "First-person shooter",
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 2"
       ],
@@ -2570,7 +2570,7 @@
       "genres": [
         "Third-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 2",
         "Xbox",
@@ -2586,7 +2586,7 @@
       "genres": [
         "Third-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "PlayStation 4"
       ],
@@ -2601,7 +2601,7 @@
         "Platformer",
         "First-person shooter"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "PC"
@@ -2617,7 +2617,7 @@
         "First-person shooter",
         "Puzzle"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Portal 2"
@@ -2630,7 +2630,7 @@
       "genres": [
         "Space flight simulation"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "TIE Fighter"
@@ -2643,7 +2643,7 @@
       "genres": [
         "Space flight simulation"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Descent: Freespace 2"
@@ -2656,7 +2656,7 @@
       "genres": [
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2"
       ],
       "title": "Metal Gear Solid 3"
@@ -2669,7 +2669,7 @@
       "genres": [
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 2",
         "Xbox",
@@ -2685,7 +2685,7 @@
       "genres": [
         "Stealth"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Hitman: Blood Money"
@@ -2698,7 +2698,7 @@
       "genres": [
         "Racing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "Xbox"
       ],
@@ -2712,7 +2712,7 @@
       "genres": [
         "Racing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 2",
         "Xbox",
         "PSP",
@@ -2728,7 +2728,7 @@
       "genres": [
         "Kart racing"
       ],
-      "consoles": [
+      "platforms": [
         "PlayStation 3",
         "Xbox 360",
         "3DS",
@@ -2748,7 +2748,7 @@
       "genres": [
         "Racing"
       ],
-      "consoles": [
+      "platforms": [
         "Nintendo 64"
       ],
       "title": "F-Zero X"
@@ -2761,7 +2761,7 @@
       "genres": [
         "Fighting"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Punch-Out!!"
@@ -2774,7 +2774,7 @@
       "genres": [
         "Racing"
       ],
-      "consoles": [
+      "platforms": [
         "GameCube",
         "PlayStation 2",
         "Xbox"
@@ -2791,7 +2791,7 @@
         "Action",
         "Sports"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast",
         "PC"
       ],
@@ -2805,7 +2805,7 @@
       "genres": [
         "Action"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn"
       ],
       "title": "Saturn Bomberman"
@@ -2818,7 +2818,7 @@
       "genres": [
         "Artillery"
       ],
-      "consoles": [
+      "platforms": [
         "PC"
       ],
       "title": "Worms Armageddon"
@@ -2831,7 +2831,7 @@
       "genres": [
         "Puzzle"
       ],
-      "consoles": [
+      "platforms": [
         "Genesis"
       ],
       "title": "Puyo Puyo 2"
@@ -2844,7 +2844,7 @@
       "genres": [
         "Shoot 'em up"
       ],
-      "consoles": [
+      "platforms": [
         "Saturn",
         "Dreamcast",
         "PlayStation 2",
@@ -2860,7 +2860,7 @@
       "genres": [
         "Sports"
       ],
-      "consoles": [
+      "platforms": [
         "Arcade Games"
       ],
       "title": "Windjammers"
@@ -2873,7 +2873,7 @@
       "genres": [
         "Puzzle"
       ],
-      "consoles": [
+      "platforms": [
         "Amiga"
       ],
       "title": "Lemmings"
@@ -2886,7 +2886,7 @@
       "genres": [
         "Rhythm"
       ],
-      "consoles": [
+      "platforms": [
         "DS"
       ],
       "title": "Elite Beat Agents"
@@ -2899,7 +2899,7 @@
       "genres": [
         "Rhythm"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast"
       ],
       "title": "Space Channel 5 Part 2"
@@ -2912,7 +2912,7 @@
       "genres": [
         "Pinball"
       ],
-      "consoles": [
+      "platforms": [
         "TurboGrafx-16"
       ],
       "title": "Devil's Crush"
@@ -2925,7 +2925,7 @@
       "genres": [
         "Survival horror"
       ],
-      "consoles": [
+      "platforms": [
         "Dreamcast",
         "PlayStation 2",
         "PC"

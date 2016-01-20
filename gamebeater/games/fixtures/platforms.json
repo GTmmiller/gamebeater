@@ -1,6 +1,6 @@
 [
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Commodore PET",
     "fields": {
       "emulatable": false,
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Odyssey",
     "fields": {
       "emulatable": false,
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Pinball",
     "fields": {
       "emulatable": false,
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Redemption",
     "fields": {
       "emulatable": false,
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Adventurevision",
     "fields": {
       "emulatable": false,
@@ -40,7 +40,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "APF-*1000/IM",
     "fields": {
       "emulatable": false,
@@ -48,7 +48,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Apple II",
     "fields": {
       "emulatable": false,
@@ -56,7 +56,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Arcadia 2001",
     "fields": {
       "emulatable": false,
@@ -64,7 +64,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Astrocade",
     "fields": {
       "emulatable": false,
@@ -72,7 +72,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Atari 2600",
     "fields": {
       "emulatable": false,
@@ -80,7 +80,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Atari 5200",
     "fields": {
       "emulatable": false,
@@ -88,7 +88,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Atari 8-bit",
     "fields": {
       "emulatable": false,
@@ -96,7 +96,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "BBC Micro",
     "fields": {
       "emulatable": false,
@@ -104,7 +104,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Cassette Vision",
     "fields": {
       "emulatable": false,
@@ -112,7 +112,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Channel F",
     "fields": {
       "emulatable": false,
@@ -120,7 +120,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Colecovision",
     "fields": {
       "emulatable": false,
@@ -128,7 +128,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "CreatiVision",
     "fields": {
       "emulatable": false,
@@ -136,7 +136,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "EACA Colour Genie 2000",
     "fields": {
       "emulatable": false,
@@ -144,7 +144,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Intellivision",
     "fields": {
       "emulatable": false,
@@ -152,7 +152,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Interton VC4000",
     "fields": {
       "emulatable": false,
@@ -160,7 +160,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Mattel Aquarius",
     "fields": {
       "emulatable": false,
@@ -168,7 +168,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Microvision",
     "fields": {
       "emulatable": false,
@@ -176,7 +176,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "NEC PC88",
     "fields": {
       "emulatable": false,
@@ -184,7 +184,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Odyssey^2",
     "fields": {
       "emulatable": false,
@@ -192,7 +192,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "RCA Studio II",
     "fields": {
       "emulatable": false,
@@ -200,7 +200,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "SG-1000",
     "fields": {
       "emulatable": false,
@@ -208,7 +208,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sord M5",
     "fields": {
       "emulatable": false,
@@ -216,7 +216,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Tandy Color Computer",
     "fields": {
       "emulatable": false,
@@ -224,7 +224,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "TI-99/4A",
     "fields": {
       "emulatable": false,
@@ -232,7 +232,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Tomy Tutor",
     "fields": {
       "emulatable": false,
@@ -240,7 +240,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Vectrex",
     "fields": {
       "emulatable": false,
@@ -248,7 +248,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "VIC-20",
     "fields": {
       "emulatable": false,
@@ -256,7 +256,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Amstrad CPC",
     "fields": {
       "emulatable": false,
@@ -264,7 +264,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Atari 7800",
     "fields": {
       "emulatable": false,
@@ -272,7 +272,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Atari ST",
     "fields": {
       "emulatable": false,
@@ -280,7 +280,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "BBS Door",
     "fields": {
       "emulatable": false,
@@ -288,7 +288,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Commodore 64",
     "fields": {
       "emulatable": false,
@@ -296,7 +296,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Famicom Disk System",
     "fields": {
       "emulatable": false,
@@ -304,7 +304,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "FM-7",
     "fields": {
       "emulatable": false,
@@ -312,7 +312,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "MSX",
     "fields": {
       "emulatable": false,
@@ -320,7 +320,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "NEC PC98",
     "fields": {
       "emulatable": false,
@@ -328,7 +328,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "NES",
     "fields": {
       "emulatable": false,
@@ -336,7 +336,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Oric 1/Atmos",
     "fields": {
       "emulatable": false,
@@ -344,7 +344,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sega Master System",
     "fields": {
       "emulatable": false,
@@ -352,7 +352,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sharp X1",
     "fields": {
       "emulatable": false,
@@ -360,7 +360,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sinclair ZX81/Spectrum",
     "fields": {
       "emulatable": false,
@@ -368,7 +368,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Super Cassette Vision",
     "fields": {
       "emulatable": false,
@@ -376,7 +376,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Acorn Archimedes",
     "fields": {
       "emulatable": false,
@@ -384,7 +384,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Amiga",
     "fields": {
       "emulatable": false,
@@ -392,7 +392,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "CD-I",
     "fields": {
       "emulatable": false,
@@ -400,7 +400,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Game Boy",
     "fields": {
       "emulatable": false,
@@ -408,7 +408,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "GameGear",
     "fields": {
       "emulatable": false,
@@ -416,7 +416,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Genesis",
     "fields": {
       "emulatable": false,
@@ -424,7 +424,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "LaserActive",
     "fields": {
       "emulatable": false,
@@ -432,7 +432,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Lynx",
     "fields": {
       "emulatable": false,
@@ -440,7 +440,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Neo-Geo CD",
     "fields": {
       "emulatable": false,
@@ -448,7 +448,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "NeoGeo",
     "fields": {
       "emulatable": false,
@@ -456,7 +456,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "OS/2",
     "fields": {
       "emulatable": false,
@@ -464,7 +464,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sega 32X",
     "fields": {
       "emulatable": false,
@@ -472,7 +472,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sega CD",
     "fields": {
       "emulatable": false,
@@ -480,7 +480,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Sharp X68000",
     "fields": {
       "emulatable": false,
@@ -488,7 +488,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Super Nintendo",
     "fields": {
       "emulatable": false,
@@ -496,7 +496,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "SuperVision",
     "fields": {
       "emulatable": false,
@@ -504,7 +504,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Turbo CD",
     "fields": {
       "emulatable": false,
@@ -512,7 +512,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "TurboGrafx-16",
     "fields": {
       "emulatable": false,
@@ -520,7 +520,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "3DO",
     "fields": {
       "emulatable": false,
@@ -528,7 +528,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Amiga CD32",
     "fields": {
       "emulatable": false,
@@ -536,7 +536,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Bandai Pippin",
     "fields": {
       "emulatable": false,
@@ -544,7 +544,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Casio Loopy",
     "fields": {
       "emulatable": false,
@@ -552,7 +552,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "CPS Changer",
     "fields": {
       "emulatable": false,
@@ -560,7 +560,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "FM Towns",
     "fields": {
       "emulatable": false,
@@ -568,7 +568,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Game Boy Color",
     "fields": {
       "emulatable": false,
@@ -576,7 +576,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Game.com",
     "fields": {
       "emulatable": false,
@@ -584,7 +584,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Jaguar",
     "fields": {
       "emulatable": false,
@@ -592,7 +592,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Jaguar CD",
     "fields": {
       "emulatable": false,
@@ -600,7 +600,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Nintendo 64",
     "fields": {
       "emulatable": false,
@@ -608,7 +608,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Nintendo 64DD",
     "fields": {
       "emulatable": false,
@@ -616,7 +616,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Palm OS Classic",
     "fields": {
       "emulatable": false,
@@ -624,7 +624,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PC-FX",
     "fields": {
       "emulatable": false,
@@ -632,7 +632,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Playdia",
     "fields": {
       "emulatable": false,
@@ -640,7 +640,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PlayStation",
     "fields": {
       "emulatable": false,
@@ -648,7 +648,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Saturn",
     "fields": {
       "emulatable": false,
@@ -656,7 +656,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Virtual Boy",
     "fields": {
       "emulatable": false,
@@ -664,7 +664,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "WonderSwan",
     "fields": {
       "emulatable": false,
@@ -672,7 +672,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Dreamcast",
     "fields": {
       "emulatable": false,
@@ -680,7 +680,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "DVD Player",
     "fields": {
       "emulatable": false,
@@ -688,7 +688,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "e-Reader",
     "fields": {
       "emulatable": false,
@@ -696,7 +696,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Game Boy Advance",
     "fields": {
       "emulatable": false,
@@ -704,7 +704,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "GameCube",
     "fields": {
       "emulatable": false,
@@ -712,7 +712,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Gizmondo",
     "fields": {
       "emulatable": false,
@@ -720,7 +720,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "GP32",
     "fields": {
       "emulatable": false,
@@ -728,7 +728,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "N-Gage",
     "fields": {
       "emulatable": false,
@@ -736,7 +736,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "NeoGeo Pocket Color",
     "fields": {
       "emulatable": false,
@@ -744,7 +744,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Nuon",
     "fields": {
       "emulatable": false,
@@ -752,7 +752,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PlayStation 2",
     "fields": {
       "emulatable": false,
@@ -760,7 +760,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "WonderSwan Color",
     "fields": {
       "emulatable": false,
@@ -768,7 +768,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Xbox",
     "fields": {
       "emulatable": false,
@@ -776,7 +776,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Zeebo",
     "fields": {
       "emulatable": false,
@@ -784,7 +784,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Zodiac",
     "fields": {
       "emulatable": false,
@@ -792,7 +792,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "BlackBerry",
     "fields": {
       "emulatable": false,
@@ -800,7 +800,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "DS",
     "fields": {
       "emulatable": false,
@@ -808,7 +808,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Flash",
     "fields": {
       "emulatable": false,
@@ -816,7 +816,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Mobile",
     "fields": {
       "emulatable": false,
@@ -824,7 +824,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Palm webOS",
     "fields": {
       "emulatable": false,
@@ -832,7 +832,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PlayStation 3",
     "fields": {
       "emulatable": false,
@@ -840,7 +840,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PSP",
     "fields": {
       "emulatable": false,
@@ -848,7 +848,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Wii",
     "fields": {
       "emulatable": false,
@@ -856,7 +856,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Xbox 360",
     "fields": {
       "emulatable": false,
@@ -864,7 +864,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "3DS",
     "fields": {
       "emulatable": false,
@@ -872,7 +872,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Amazon Fire TV",
     "fields": {
       "emulatable": false,
@@ -880,7 +880,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Android",
     "fields": {
       "emulatable": false,
@@ -888,7 +888,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Arcade Games",
     "fields": {
       "emulatable": false,
@@ -896,7 +896,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "iOS (iPhone/iPad)",
     "fields": {
       "emulatable": false,
@@ -904,7 +904,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Linux",
     "fields": {
       "emulatable": false,
@@ -912,7 +912,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Macintosh",
     "fields": {
       "emulatable": false,
@@ -920,7 +920,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Online/Browser",
     "fields": {
       "emulatable": false,
@@ -928,7 +928,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Ouya",
     "fields": {
       "emulatable": false,
@@ -936,7 +936,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PC",
     "fields": {
       "emulatable": false,
@@ -944,7 +944,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PlayStation 4",
     "fields": {
       "emulatable": false,
@@ -952,7 +952,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "PlayStation Vita",
     "fields": {
       "emulatable": false,
@@ -960,7 +960,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Wii U",
     "fields": {
       "emulatable": false,
@@ -968,7 +968,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Windows Mobile",
     "fields": {
       "emulatable": false,
@@ -976,7 +976,7 @@
     }
   },
   {
-    "model": "games.console",
+    "model": "games.platform",
     "pk": "Xbox One",
     "fields": {
       "emulatable": false,

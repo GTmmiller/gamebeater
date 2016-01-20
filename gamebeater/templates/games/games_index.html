@@ -6,7 +6,7 @@
 			<tr>
 				<th>Title</th>
 				<th>Genres</th>
-				<th>Consoles</th>
+				<th>Platforms</th>
 			</tr>
 			{% for game in object_list %}
 				<tr>
@@ -23,14 +23,14 @@
 						{% endif %}
 					</td>
 					<td>
-						{% if game.consoles.all %}
+						{% if game.platforms.all %}
 							<ul>
-								{% for console in game.consoles.all %}
-									<li>{{ console.name }}</li>
+								{% for platform in game.platforms.all %}
+									<li>{{ platform.name }}</li>
 								{% endfor %}
 							</ul>
 						{% else %}
-							This game was never on any console. That's not right.
+							This game was never on any platform. That's not right.
 						{% endif %}
 					</td>
 				</tr>
