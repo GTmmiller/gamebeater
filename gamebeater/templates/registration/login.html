@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Gamebeater | Login{% endblock %}
+{% block content %}
+<h1>Login to your Gamebeater account</h1>
+<form id="form" method="post" action="{{ app_path }}" enctype="multipart/form-data">
+	{% csrf_token %}
+	
+	{{ form.as_p }}
+	
+	<input type="submit" name="submit" value="Login" />
+</form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Gamebeater | Register{% endblock %}
+{% block content %}
+<h1>Register your Gamebeater account</h1>
+
+{% if registered %}
+<strong>Thanks for signing up!</strong>
+{% else %}
+<strong>Sign up here!</strong>
+
+<form id="user_form" method="post" action="{% url 'profiles:register' %}" enctype="multipart/form-data">
+	{% csrf_token %}
+	
+	{{ user_form.as_p }}
+	
+	<input type="submit" name="submit" value="Register" />
+</form>
+{% endif %}
+
+{% endblock %}

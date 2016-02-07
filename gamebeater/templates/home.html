@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Gamebeater{% endblock %}
+{% block content %}
+<h1>Gamebeater</h1>
+
+<p>Gamebeater is the cool webapp that lets you manage and track games you own and games you want to own and how you're doing on beating them! The fun doesn't stop once you beat the game. With Gamebeater's goals functions you can plan out beating a game and some extra goals like getting all of a game's achievement or even planning a speed run.</p>
+
+<a href="{% url 'profiles:register' %}">Sign Up</a>
+<a href="{% url 'login' %}">Login</a>
+{% endblock %}
