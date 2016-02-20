@@ -8,7 +8,7 @@
 <div class="pure-g">
     {% for add_game_form in add_game_forms %}
     <div class="pure-u-1-5">
-        <h2>{{ add_game_form.initial.game.title }}</h2>
+        <h2>{{ add_game_form.data.game.title }}</h2>
         <form id="add_game_form" method="post" action="{% url 'profiles:create_ownership' %}" enctype="multipart/form-data">
             {% csrf_token %}
             {{ add_game_form.as_p }}

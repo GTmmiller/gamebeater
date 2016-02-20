@@ -35,9 +35,14 @@ class AddGamesView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         unaffiliated_games = self.request.user.gamebeaterprofile.get_unaffiliated_games()
-        return [GameOwnershipForm(
-            initial={"game": game, "owner": self.request.user.gamebeaterprofile}
-        ) for game in unaffiliated_games]
+        ownership_list = []
+        for game in unaffiliated_games:
+            ownership = GameOwnershipForm(
+                {"game": game, "owner": self.request.user.gamebeaterprofile}
+            )
+            ownership.fields['platform'].queryset = ownership.data['game'].platforms
+            ownership_list.append(ownership)
+        return tuple(ownership_list)
 
 class PreventGetMixin():
     """
