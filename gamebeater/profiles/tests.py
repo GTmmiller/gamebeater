@@ -144,6 +144,63 @@ class GamebeaterProfileMethodTests(TestCase):
                 list(all_gameownerships_by_completion[index].gameownership_list)
             )
 
+    def test_get_unaffiliated_games_with_no_games(self):
+        """
+        get_unaffiliated_games should return a blank query set with no games
+        """
+        profile = create_test_profile()
+        self.assertFalse(profile.get_unaffiliated_games())
+
+    def test_get_unaffiliated_games_with_no_owned_games(self):
+        """
+        get_unaffiliated_games should return all games when no games are owned
+        """
+        profile = create_test_profile()
+
+        create_game(game_title="TestGame")
+        create_game(game_title="TestGame 2: Revenge")
+        create_game(game_title="TestGame 3: Final Mix")
+
+        self.assertEqual(
+            list(Game.objects.all()),
+            list(profile.get_unaffiliated_games())
+        )
+
+    def test_get_unaffiliated_games_with_unowned_games(self):
+        """
+        get_unaffiliated_games should return a query with games not owned when the user already
+        owns some games
+        """
+        profile = create_test_profile()
+
+        game_one = create_game(game_title="TestGame")
+        game_two = create_game(game_title="TestGame 2: Revenge")
+        game_three = create_game(game_title="TestGame 3: Final Mix")
+
+        create_ownership(profile=profile, game=game_one)
+
+        query_set = profile.get_unaffiliated_games()
+
+        self.assertNotIn(game_one, query_set)
+        self.assertIn(game_two, query_set)
+        self.assertIn(game_three, query_set)
+
+    def test_get_unaffiliated_games_with_all_games_owned(self):
+        """
+        get_unaffiliated_games should return a blank query set when all games are owned
+        """
+        profile = create_test_profile()
+
+        game_one = create_game(game_title="TestGame")
+        game_two = create_game(game_title="TestGame 2: Revenge")
+        game_three = create_game(game_title="TestGame 3: Final Mix")
+
+        create_ownership(profile=profile, game=game_one)
+        create_ownership(profile=profile, game=game_two)
+        create_ownership(profile=profile, game=game_three)
+
+        self.assertEqual([], list(profile.get_unaffiliated_games()))
+
 class GameOwnershipsByCompletionStatusMethodTests(TestCase):
     
     def setUp(self):

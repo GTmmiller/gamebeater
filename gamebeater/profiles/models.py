@@ -31,6 +31,9 @@ class GamebeaterProfile(models.Model):
             )
         return tuple(gameownerships_by_completion_status_list)
 
+    def get_unaffiliated_games(self):
+        return Game.objects.all().exclude(pk__in=self.games.all().values('pk'))
+
     def __unicode__(self):
         return self.user.username
 

@@ -1,0 +1,20 @@
+<head>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+</head>
+{% extends "base.html" %}
+{% block title %}Gamebeater | Add Games{% endblock %}
+{% block content %}
+<h1>Add Some Games</h1>
+<div class="pure-g">
+    {% for add_game_form in add_game_forms %}
+    <div class="pure-u-1-5">
+        <h2>{{ add_game_form.initial.game.title }}</h2>
+        <form id="add_game_form" method="post" action="{% url 'profiles:create_ownership' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ add_game_form.as_p }}
+            <input type="submit" name="submit" value="Add Game" />
+        </form>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -7,7 +7,7 @@
 <h1>Dashboard</h1>
 <p>Welcome back {{gamebeaterprofile.user.username}}!</p>
 
-<p><a href="game add">Add some games to your gamebeater!</a></p>
+<p><a href="{% url 'profiles:add_games' %}">Add some games to your gamebeater!</a></p>
 
 <h2>Game Summary</h2>
 <ul>
@@ -25,7 +25,7 @@
 		<div class="game-box">
 			<h4>{{ gameownership.game.title }}</h4>
 			<p><a href="url Goals for game">Goals</a></p>
-			<form id="user_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
+			<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
 	           {% csrf_token %}
 
 	           {{ completion_status_update_form.as_p }}
