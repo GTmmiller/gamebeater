@@ -1,6 +1,3 @@
-<head>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-</head>
 {% extends "base.html" %}
 {% block title %}Gamebeater | Dashboard{% endblock %}
 {% block content %}
@@ -23,7 +20,7 @@
 		<h3>{{ gameownerships_by_completion_status.completion_status }}</h3>
 		{% for gameownership in gameownerships_by_completion_status.gameownership_list %}
 		<div class="game-box">
-			<h4>{{ gameownership.game.title }}</h4>
+			<h4><a href="{% url 'profiles:update_ownership' gameownership.pk %}">{{ gameownership.game.title }}</a></h4>
 			<p><a href="url Goals for game">Goals</a></p>
 			<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
 	           {% csrf_token %}
@@ -37,5 +34,4 @@
 	</div>
 	{% endfor %}
 </div>
-
 {% endblock %}

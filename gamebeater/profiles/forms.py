@@ -23,3 +23,9 @@ class GameOwnershipForm(forms.ModelForm):
         model = GameOwnership
         fields = ('owner', 'game', 'platform', 'ownership_status', 'completion_status')
         widgets = {'owner': forms.HiddenInput(), 'game': forms.HiddenInput}
+
+class GameOwnershipUpdateForm(forms.ModelForm):
+
+    class Meta:
+        model = GameOwnership
+        fields = ('platform', 'ownership_status', 'completion_status')

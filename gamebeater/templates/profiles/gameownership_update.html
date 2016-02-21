@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Gamebeater | Update Game{% endblock %}
 {% block content %}
-<h1>{{ object }}</h1>
-<form action="" method="post">{% csrf_token %}
-	{{ form.as_p }}
+<h1>{{ ownership_object.game.title }}</h1>
+<form action="" method="post">
+    {% csrf_token %}
+	{{ update_form.as_p }}
 	<input type="submit" value="Update" />
 </form>
 {% endblock %}

@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
 from . import views
-from .views import DashboardView, CompletionStatusUpdateView, AddGamesView, GameOwnershipCreationView
+from .views import DashboardView, CompletionStatusUpdateView, AddGamesView, GameOwnershipCreationView, GameOwnershipUpdateView
 
 app_name = 'profiles'
 urlpatterns = [
@@ -14,5 +14,7 @@ urlpatterns = [
     # ex: /profiles/add_games/
     url(r'^add_games/$', AddGamesView.as_view(), name='add_games'),
     # ex: /profiles/gameownerships/
-    url(r'^gameownerships/$', GameOwnershipCreationView.as_view(), name='create_ownership')
+    url(r'^gameownerships/$', GameOwnershipCreationView.as_view(), name='create_ownership'),
+    # ex: /profiles/gameownerships/1/
+    url(r'^gameownerships/(?P<pk>[0-9]+)/$', GameOwnershipUpdateView.as_view(), name='update_ownership')
 ]

@@ -4,7 +4,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse_lazy
 from django.http import Http404
 
-from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm
+from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm, GameOwnershipUpdateForm
 from .models import GamebeaterProfile, GameOwnership
 
 class DashboardView(LoginRequiredMixin, View):
@@ -60,6 +60,30 @@ class GameOwnershipCreationView(LoginRequiredMixin, PreventGetMixin, CreateView)
     form_class = GameOwnershipForm
 
     success_url = reverse_lazy("profiles:add_games")
+
+class GameOwnershipUpdateView(LoginRequiredMixin, UpdateView):
+    login_url = '/login'
+    redirect_field_name = 'redirect_to'
+
+    model = GameOwnership
+    form_class = GameOwnershipUpdateForm
+    context_object_name = 'ownership_object'
+    template_name = 'profiles/gameownership_update.html'
+
+    success_url = reverse_lazy("profiles:dashboard")
+
+    def get(self, request, *args, **kwargs):
+        context_object = self.get_object()
+        update_form = GameOwnershipUpdateForm(instance=context_object)
+        update_form.fields['platform'].queryset = context_object.game.platforms
+        return render(
+            request,
+            'profiles/gameownership_update.html',
+            {
+                "update_form": update_form,
+                self.context_object_name: context_object
+            }
+        )
 
 class CompletionStatusUpdateView(LoginRequiredMixin, PreventGetMixin, UpdateView):
     login_url = '/login'
