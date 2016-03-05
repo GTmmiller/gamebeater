@@ -10,15 +10,15 @@
 <ul>
 	<li>You have {{ gamebeaterprofile.games.count }} of games in your gamebeater</li>
 	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
-	<li>{{ gameownerships_by_completion_status.gameownership_list.count }} games({{ gameownerships_by_completion_status.completion_status_percentage }}%) are {{ gameownerships_by_completion_status.completion_status }}</li>
+	<li>{{ gameownerships_by_completion_status.object_list.count }} games({{ gameownerships_by_completion_status.completion_status_percentage }}%) are {{ gameownerships_by_completion_status.status }}</li>
 	{% endfor %}
 </ul>
 <h2>Games To Beat</h2>
 <div class="pure-g">
 	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
 	<div class="pure-u-1-4">
-		<h3>{{ gameownerships_by_completion_status.completion_status }}</h3>
-		{% for gameownership in gameownerships_by_completion_status.gameownership_list %}
+		<h3>{{ gameownerships_by_completion_status.status }}</h3>
+		{% for gameownership in gameownerships_by_completion_status.object_list %}
 		<div class="game-box">
 			<h4><a href="{% url 'profiles:update_ownership' gameownership.pk %}">{{ gameownership.game.title }}</a></h4>
 			<p><a href="url Goals for game">Goals</a></p>

@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth.models import User
 
-from .utils import CompletionStatus 
-from .models import GameOwnership
+from .statuses import CompletionStatus 
+from .models import GameOwnership, Goal
 
 class UserForm(forms.ModelForm):
 	password = forms.CharField(widget=forms.PasswordInput())
@@ -29,3 +29,9 @@ class GameOwnershipUpdateForm(forms.ModelForm):
     class Meta:
         model = GameOwnership
         fields = ('platform', 'ownership_status', 'completion_status')
+
+class GoalUpdateForm(forms.ModelForm):
+
+    class Meta:
+        model = Goal
+        fields = ('text', 'start_time', 'complete_time', 'status')

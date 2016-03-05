@@ -4,18 +4,20 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse_lazy
 from django.http import Http404
 
-from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm, GameOwnershipUpdateForm
+from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm, GameOwnershipUpdateForm, GoalUpdateForm
 from .models import GamebeaterProfile, GameOwnership
+from .statuses import get_all_objects_by_status, CompletionStatus
 
 class DashboardView(LoginRequiredMixin, View):
     login_url = '/login'
     redirect_field_name = 'redirect_to'
 
     def get(self, request, *args, **kwargs):
+        # TODO: add default values to forms
         # Handles display of Gamebeater Profile
         profile_pk = request.user.gamebeaterprofile.pk
         gamebeaterprofile = get_object_or_404(GamebeaterProfile, pk=profile_pk)
-        gameownerships_by_completion_status_list = gamebeaterprofile.get_all_gameownerships_by_completion()
+        gameownerships_by_completion_status_list = get_all_objects_by_status(gamebeaterprofile.games, CompletionStatus, gamebeaterprofile.get_gameownerships_by_completion)
         return render(
             request,
             'profiles/dashboard.html',
@@ -81,6 +83,30 @@ class GameOwnershipUpdateView(LoginRequiredMixin, UpdateView):
             'profiles/gameownership_update.html',
             {
                 "update_form": update_form,
+                self.context_object_name: context_object
+            }
+        )
+
+class GoalDashboardView(LoginRequiredMixin, UpdateView):
+    login_url = '/login'
+    redirect_field_name = 'redirect_to'
+
+    model = GameOwnership
+    form_class = GoalUpdateForm
+    context_object_name = 'ownership_object'
+    template_name = 'profiles/add_goals.html'
+
+    # success_url might be needed
+
+    # Rewrite this to user super? that would give us context_object
+    def get(self, request, *args, **kwargs):
+        context_object = self.get_object()
+        goal_forms = [self.form_class(instance=goal) for goal in context_object.goals]
+        return render(
+            request,
+            self.template_name,
+            {
+                "goal_forms": goal_forms,
                 self.context_object_name: context_object
             }
         )
