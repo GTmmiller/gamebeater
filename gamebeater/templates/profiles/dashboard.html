@@ -8,9 +8,9 @@
 
 <h2>Game Summary</h2>
 <ul>
-	<li>You have {{ gamebeaterprofile.games.count }} of games in your gamebeater</li>
+	<li>You have {{ gamebeaterprofile.games.count }} games in your gamebeater</li>
 	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
-	<li>{{ gameownerships_by_completion_status.object_list.count }} games({{ gameownerships_by_completion_status.completion_status_percentage }}%) are {{ gameownerships_by_completion_status.status }}</li>
+	<li>{{ gameownerships_by_completion_status.object_list.count }} games({{ gameownerships_by_completion_status.status_percentage }}%) are {{ gameownerships_by_completion_status.status }}</li>
 	{% endfor %}
 </ul>
 <h2>Games To Beat</h2>
@@ -21,13 +21,18 @@
 		{% for gameownership in gameownerships_by_completion_status.object_list %}
 		<div class="game-box">
 			<h4><a href="{% url 'profiles:update_ownership' gameownership.pk %}">{{ gameownership.game.title }}</a></h4>
-			<p><a href="url Goals for game">Goals</a></p>
+			<p><a href="{% url 'profiles:goal_dashboard' gameownership.pk%}">Goals</a></p>
 			<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
 	           {% csrf_token %}
 
 	           {{ completion_status_update_form.as_p }}
 
 	           <input type="submit" name="submit" value="Change Status" />
+            </form>
+            <form id="completion_form" method="post" action="{% url 'profiles:delete_ownership' gameownership.pk %}" enctype="multipart/form-data">
+	           {% csrf_token %}
+
+	           <input type="submit" name="submit" value="Delete Game" />
             </form>
 		</div>
 		{% endfor %}

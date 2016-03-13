@@ -49,6 +49,9 @@ class GameOwnership(models.Model):
         default=CompletionStatus.NOT_STARTED
     )
 
+    def get_goals_by_completion(self, completion_status):
+        return self.goal_set.filter(status=completion_status)
+
     def __unicode__(self):
         return self.owner.user.username + " => " + self.game.title
 

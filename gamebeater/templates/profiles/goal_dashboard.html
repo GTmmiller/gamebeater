@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Gamebeater | {{ ownership_object.game.title }} Goals{% endblock %}
+{% block content %}
+<h1>{{ ownership_object.game.title }} Goals</h1>
+<h2>Goal Summary</h2>
+<ul>
+	<li>You have {{ ownership_object.goal_set.count }} goals for {{ ownership_object.game.title }}</li>
+	{% for goals_by_completion_status in goals_by_completion_status_list %}
+	<li>{{ goals_by_completion_status.object_list.count }} goals({{ goals_by_completion_status.status_percentage }}%) are {{ goals_by_completion_status.status }}</li>
+	{% endfor %}
+</ul>
+
+<h2>Add A Goal</h2>
+<form id="completion_form" method="post" action="{% url 'profiles:add_goals' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{ goal_creation_form.as_p }}
+
+    <input type="submit" name="submit" value="Change Status" />
+</form>
+
+<h2>Goals To Complete</h2>
+<div class="pure-g">
+	{% for goals_by_completion_status in goals_by_completion_status_list %}
+	<div class="pure-u-1-4">
+		<h3>{{ goals_by_completion_status.status }}</h3>
+		{% for goal in goals_by_completion_status.object_list %}
+		<div class="goal-box">
+			<h4><a href="{% url 'profiles:update_goal' goal.pk %}">{{ goal.text }}</a></h4>
+			<form id="completion_form" method="post" action="{% url 'profiles:update_goal' goal.pk %}" enctype="multipart/form-data">
+	           {% csrf_token %}
+
+	           {{ goal_form.as_p }}
+
+	           <input type="submit" name="submit" value="Change Status" />
+            </form>
+            <form id="deletion_form" method="post" action="{% url 'profiles:delete_goal' goal.pk %}" enctype="multipart/form-data">
+	           {% csrf_token %}
+
+	           <input type="submit" name="submit" value="Delete Goal" />
+            </form>
+		</div>
+		{% endfor %}
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}
+
+ "goal_form": self.form_class,
+ self.context_object_name: context_object,
+ "goals_by_completion_status_list": goals_by_completion_status_list
+ 
+ ownership = models.ForeignKey(GameOwnership)
+    text = models.CharField(
+    start_time = models.DateTimeField(
+    complete_time = models.DateTimeField(
+    status = models.CharField(

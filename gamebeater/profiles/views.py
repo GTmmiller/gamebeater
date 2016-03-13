@@ -1,17 +1,14 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import View, UpdateView, CreateView, ListView
+from django.views.generic import View, UpdateView, CreateView, ListView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse_lazy
 from django.http import Http404
 
-from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm, GameOwnershipUpdateForm, GoalUpdateForm
-from .models import GamebeaterProfile, GameOwnership
+from .forms import UserForm, CompletionStatusUpdateForm, GameOwnershipForm, GameOwnershipUpdateForm, GoalStatusUpdateForm, GoalCreationForm, GoalCompletionStatusUpdateForm
+from .models import GamebeaterProfile, GameOwnership, Goal
 from .statuses import get_all_objects_by_status, CompletionStatus
 
 class DashboardView(LoginRequiredMixin, View):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
     def get(self, request, *args, **kwargs):
         # TODO: add default values to forms
         # Handles display of Gamebeater Profile
@@ -29,9 +26,6 @@ class DashboardView(LoginRequiredMixin, View):
         )
 
 class AddGamesView(LoginRequiredMixin, ListView):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
     template_name = 'profiles/add_games.html'
     context_object_name = 'add_game_forms'
 
@@ -55,18 +49,12 @@ class PreventGetMixin():
         raise Http404
 
 class GameOwnershipCreationView(LoginRequiredMixin, PreventGetMixin, CreateView):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
     model = GameOwnership
     form_class = GameOwnershipForm
 
     success_url = reverse_lazy("profiles:add_games")
 
 class GameOwnershipUpdateView(LoginRequiredMixin, UpdateView):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
     model = GameOwnership
     form_class = GameOwnershipUpdateForm
     context_object_name = 'ownership_object'
@@ -87,36 +75,55 @@ class GameOwnershipUpdateView(LoginRequiredMixin, UpdateView):
             }
         )
 
-class GoalDashboardView(LoginRequiredMixin, UpdateView):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
+class GameOwnershipDeletionView(LoginRequiredMixin, DeleteView):
     model = GameOwnership
-    form_class = GoalUpdateForm
+    success_url = reverse_lazy('profiles:dashboard')
+
+class GoalDeletionView(LoginRequiredMixin, DeleteView):
+    model = Goal
+    success_url = reverse_lazy('profiles:dashboard')
+
+class GoalDashboardView(LoginRequiredMixin, UpdateView):
+    model = GameOwnership
+    form_class = GoalStatusUpdateForm
+    goal_creation_form = GoalCreationForm
     context_object_name = 'ownership_object'
-    template_name = 'profiles/add_goals.html'
+    template_name = 'profiles/goal_dashboard.html'
 
-    # success_url might be needed
+    #success_url = reverse_lazy("profiles:goal_dashboard", args=[self.kwargs.get(self.pk_url_kwarg)])
 
-    # Rewrite this to user super? that would give us context_object
     def get(self, request, *args, **kwargs):
+        profile_pk = request.user.gamebeaterprofile.pk
+        gamebeaterprofile = get_object_or_404(GamebeaterProfile, pk=profile_pk)
+
+        # We have to check that the profile exists before you get the object
+        # this could be messed up
+        # TODO: change routes to work properly with the profile
         context_object = self.get_object()
-        goal_forms = [self.form_class(instance=goal) for goal in context_object.goals]
+        goal_form = self.goal_creation_form(
+            {"ownership": context_object.pk}
+        )
+        goals_by_completion_status_list = get_all_objects_by_status(context_object.goal_set, CompletionStatus, context_object.get_goals_by_completion)
         return render(
             request,
             self.template_name,
             {
-                "goal_forms": goal_forms,
-                self.context_object_name: context_object
+                "goal_form": self.form_class,
+                self.context_object_name: context_object,
+                "goals_by_completion_status_list": goals_by_completion_status_list,
+                "goal_creation_form": goal_form
             }
         )
 
 class CompletionStatusUpdateView(LoginRequiredMixin, PreventGetMixin, UpdateView):
-    login_url = '/login'
-    redirect_field_name = 'redirect_to'
-
     model = GameOwnership
     form_class = CompletionStatusUpdateForm
+
+    success_url = reverse_lazy("profiles:dashboard")
+
+class GoalCompletionStatusUpdateView(LoginRequiredMixin, PreventGetMixin, UpdateView):
+    model = Goal
+    form_class = GoalCompletionStatusUpdateForm
 
     success_url = reverse_lazy("profiles:dashboard")
 
@@ -146,3 +153,9 @@ def register(request):
         'profiles/register.html',
         {'user_form': user_form, 'registered': registered}
     )
+
+class CreateGoalView(LoginRequiredMixin, CreateView):
+    model = GameOwnership
+    form_class = GoalCreationForm
+
+    success_url = reverse_lazy("profiles:dashboard")

@@ -128,5 +128,7 @@ STATICFILES_DIRS = [
     #'/var/www/static/',
 ]
 
-# Redirect urls for auth
+# This is where we want login to redirect to
 LOGIN_REDIRECT_URL = '/profiles/dashboard/'
+
+LOGIN_URL = '/login/'
