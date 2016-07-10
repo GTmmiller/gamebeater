@@ -1,7 +1,8 @@
 from django.conf.urls import url
 
 from . import views
-from .views import DashboardView, CompletionStatusUpdateView, AddGamesView, GameOwnershipCreationView, GameOwnershipUpdateView, GoalDashboardView, CreateGoalView, GoalCompletionStatusUpdateView, GameOwnershipDeletionView, GoalDeletionView
+from .views import DashboardView, CompletionStatusUpdateView, AddGamesView, GameOwnershipCreationView, GameOwnershipUpdateView, GoalDashboardView, CreateGoalView, GoalCompletionStatusUpdateView, GameOwnershipDeletionView, GoalDeletionView, GoalUpdateView
+import pdb
 
 app_name = 'profiles'
 urlpatterns = [
@@ -24,7 +25,9 @@ urlpatterns = [
     # ex: /profiles/gameownerships/1/add_goals
     url(r'^goals/$', CreateGoalView.as_view(), name='add_goals'),
     # ex: /profiles/goals/1/
-    url(r'^goals/(?P<pk>[0-9]+)/$', GoalCompletionStatusUpdateView.as_view(), name='update_goal'),
+    url(r'^goals/(?P<pk>[0-9]+)/$', GoalUpdateView.as_view(), name='update_goal'),
+    # ex: /profiles/goals/1/completion_status
+    url(r'^goals/(?P<pk>[0-9]+)/completion_status$', GoalCompletionStatusUpdateView.as_view(), name='completion_status_update_goal'),
     # ex: /profiles/goals/1/delete/
     url(r'^goals/(?P<pk>[0-9]+)/delete/$', GoalDeletionView.as_view(), name='delete_goal')
 ]

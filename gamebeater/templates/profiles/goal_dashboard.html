@@ -1,57 +1,229 @@
 {% extends "base.html" %}
+
+{% load staticfiles %}
+{% load status_list_filters %}
+{% load widget_tweaks %}
+
 {% block title %}Gamebeater | {{ ownership_object.game.title }} Goals{% endblock %}
-{% block content %}
-<h1>{{ ownership_object.game.title }} Goals</h1>
-<h2>Goal Summary</h2>
-<ul>
-	<li>You have {{ ownership_object.goal_set.count }} goals for {{ ownership_object.game.title }}</li>
-	{% for goals_by_completion_status in goals_by_completion_status_list %}
-	<li>{{ goals_by_completion_status.object_list.count }} goals({{ goals_by_completion_status.status_percentage }}%) are {{ goals_by_completion_status.status }}</li>
-	{% endfor %}
-</ul>
 
-<h2>Add A Goal</h2>
-<form id="completion_form" method="post" action="{% url 'profiles:add_goals' %}" enctype="multipart/form-data">
-    {% csrf_token %}
+{% block pagestylesheets %}
+<link rel="stylesheet" href="{% static 'css/vendor/bootstrap-datetimepicker-4.17.37.min.css' %}">
+{% endblock%}
 
-    {{ goal_creation_form.as_p }}
-
-    <input type="submit" name="submit" value="Change Status" />
-</form>
-
-<h2>Goals To Complete</h2>
-<div class="pure-g">
-	{% for goals_by_completion_status in goals_by_completion_status_list %}
-	<div class="pure-u-1-4">
-		<h3>{{ goals_by_completion_status.status }}</h3>
-		{% for goal in goals_by_completion_status.object_list %}
-		<div class="goal-box">
-			<h4><a href="{% url 'profiles:update_goal' goal.pk %}">{{ goal.text }}</a></h4>
-			<form id="completion_form" method="post" action="{% url 'profiles:update_goal' goal.pk %}" enctype="multipart/form-data">
-	           {% csrf_token %}
-
-	           {{ goal_form.as_p }}
-
-	           <input type="submit" name="submit" value="Change Status" />
-            </form>
-            <form id="deletion_form" method="post" action="{% url 'profiles:delete_goal' goal.pk %}" enctype="multipart/form-data">
-	           {% csrf_token %}
-
-	           <input type="submit" name="submit" value="Delete Goal" />
-            </form>
+{% block navbar %}
+<!-- Nav bar section -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{% url 'profiles:dashboard' %}">Gamebeater</a>
 		</div>
-		{% endfor %}
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="{% url 'profiles:dashboard' %}">Dashboard</a></li>
+				<li><a href="{% url 'profiles:add_games' %}">Add Games</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ request.user.username }}</a></li>
+				<li><a href="{% url 'logout' %}">Logout</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb gamebeater-breadcrumb text-muted">
+	<li><a href="{% url 'profiles:dashboard' %}"><i>Dashboard</i></a></li>
+	<li><i>{{ ownership_object.game.title }} Goals</i></li>
+</ol>
+
+<h1>{{ ownership_object.game.title }} Goals</h1>
+<div class="row">
+	<div class="col-md-6">
+		<h2>Add Goal</h2>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="button" data-toggle="collapse"
+			data-target="#newGoalBox" aria-expanded="false" aria-controls="newGoalBox">
+				<h3 class="panel-title">
+					New Goal
+				</h3> 							
+			</div>
+			<div id="newGoalBox" class="panel-collapse collapse">
+				<div class="panel-body">
+					<form id="completion_form" method="post" action="{% url 'profiles:add_goals' %}" enctype="multipart/form-data">
+						{% csrf_token %}
+						
+						{{ goal_creation_form.non_field_error }}
+						{{ goal_creation_form.ownership }}
+						<div class="form-group">
+							{{ goal_creation_form.text.errors }}
+							<label class="control-label" for="{{ goal_creation_form.text.id_for_label }}">
+								Goal:
+							</label>
+							{{ goal_creation_form.text|add_class:"form-control" }}
+						</div>
+						<div class="form-group">
+							{{ goal_creation_form.status.errors }}
+							<label class="control-label" for="{{ goal_creation_form.status.id_for_label }}" >
+								Completion Status:
+							</label>
+							{{ goal_creation_form.status|add_class:"form-control"}}
+						</div>				
+						<div class="form-group">
+							{{ goal_creation_form.start_time.errors }}
+							<label class="control-label" for="{{ goal_creation_form.start_time.id_for_label }}">
+								Start Time:
+							</label>
+							<div class="input-group date" id="startGoalIdDateTimePicker">
+								{{ goal_creation_form.start_time|add_class:"form-control" }}
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+						<div class="form-group">
+							{{ goal_creation_form.complete_time.errors }}
+							<label class="control-label" for="{{ goal_creation_form.complete_time.id_for_label }}">
+								Complete Time:
+							</label>
+							<div class="input-group date" id="stopGoalIdDateTimePicker">
+								{{ goal_creation_form.complete_time|add_class:"form-control" }}
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+						<div class="gamebeater-centeredBtn">
+							<button type="submit" class="btn btn-default">
+								Add Goal
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-6">
+		<h2>Statistics</h2>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="button" data-toggle="collapse"
+			data-target="#completionStatsBox" aria-expanded="false" aria-controls="completionStatsBox">
+				<h3 class="panel-title">
+					Completion Statistics
+					<span class="pull-right">
+						<div class="progress gamebeater-statbox-progress">			
+							{% for goals_by_completion_status in goals_by_completion_status_list %}
+							<div class="progress-bar {% cycle 'progress-bar-danger' 'progress-bar-striped' 'progress-bar-warning' 'progress-bar-striped progress-bar-success' %}" role="progressbar" aria-valuenow="{{ goals_by_completion_status.status_percentage }}" 
+							aria-valuemin="0" aria-valuemax="100" style="width:{{ goals_by_completion_status.status_percentage }}%">
+								<span class="sr-only">{{ goals_by_completion_status.status_percentage }}% {{ goals_by_completion_status.status }}</span>
+							</div>
+							{% endfor %}
+						</div>
+					</span>
+				</h3> 							
+			</div>
+			<div id="completionStatsBox" class="panel-collapse collapse">
+				<ul class="panel-body list-group">
+					{% for goals_by_completion_status in goals_by_completion_status_list %}
+					<li class="list-group-item">
+						{{ goals_by_completion_status.status }}: {{ goals_by_completion_status.status_percentage }}%
+						<span class="pull-right">
+							<div class="progress gamebeater-statbox-progress">
+								<div class="progress-bar gamebeater-statbox-invisibleProgressBar" role="progressbar" style="width:{{ goals_by_completion_status_list|previous_status_percentage:forloop.counter0 }}%">
+								</div>
+								<div class="progress-bar {% cycle 'progress-bar-danger' 'progress-bar-striped' 'progress-bar-warning' 'progress-bar-striped progress-bar-success' %}" role="progress-bar" aria-valuenow="{{ goals_by_completion_status.status_percentage }}"
+								aria-valuemin="0" aria-maxvalue="100" style="width:{{ goals_by_completion_status.status_percentage }}%;">
+									<span class="sr-only">{{ goals_by_completion_status.status_percentage }}% {{ goals_by_completion_status.status }}</span>
+								</div>
+							</div>
+						</span>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Goals</h2>
+<div class="row">
+	{% for goals_by_completion_status in goals_by_completion_status_list %}
+	<div class="col-md-3">
+		<div class="panel {% cycle 'panel-danger' 'panel-primary' 'panel-warning' 'panel-success' %}">
+			<div class="panel-heading" role="button" data-toggle="collapse"
+			data-target="#{{ goals_by_completion_status.status|slugify }}Panel" aria-expanded="false" aria-controls="{{ goals_by_completion_status.status|slugify }}Panel">
+				<h3 class="gamebeater-completionPanel-panelHeader">{{ goals_by_completion_status.status }} <span class="badge">{{ goals_by_completion_status.object_list.count }}</span></h3>
+			</div>
+			<div id="{{ goals_by_completion_status.status|slugify }}Panel" class="panel-body panel-collapse collapse in">
+				{% for goal in goals_by_completion_status.object_list %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="gamebeater-completionPanel-goalHeading">
+							<a href="{% url 'profiles:update_goal' goal.pk %}">{{ goal.text }}</a>
+							<span class="pull-right">
+								<form id="deletion_form" method="post" action="{% url 'profiles:delete_goal' goal.pk %}" enctype="multipart/form-data">
+									{% csrf_token %}
+									<div class="form-group">
+										<button class="btn btn-default" type="submit" name="submit">
+											<span class="glyphicon glyphicon-remove"></span>
+										</button>
+									</div>
+								</form>
+							</span>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update_goal' goal.pk %}" enctype="multipart/form-data">
+							{% csrf_token %}
+							
+							{{ goal_form.non_field_errors }}
+							<div class="form-group">
+								{{ goal_form.status.errors }}
+								<label class="control-label" for="{{ goal_form.status.id_for_label }}">Completion Status:</label>
+								{{ goal_form.status|add_class:"form-control gamebeater-option"}}
+							</div>
+							<div class="form-group">
+								<div class="gamebeater-centeredBtn">
+									<button class="btn btn-default">
+										Change Status
+									</button>
+								</div>
+								<p class="gamebeater-goalPanel-timestamp">Time Started: {{ goal.start_time|default:"-" }}</p>
+								<p class="gamebeater-goalPanel-timestamp">Time Completed: {{ goal.complete_time|default:"-" }}</p>
+							</div>
+						</form>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 	{% endfor %}
 </div>
 {% endblock %}
 
- "goal_form": self.form_class,
- self.context_object_name: context_object,
- "goals_by_completion_status_list": goals_by_completion_status_list
- 
- ownership = models.ForeignKey(GameOwnership)
-    text = models.CharField(
-    start_time = models.DateTimeField(
-    complete_time = models.DateTimeField(
-    status = models.CharField(
+{% block pagejavascript %}
+<script src="{% static 'js/vendor/moment-2.12.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap-datetimepicker-4.17.37.min.js' %}"></script>
+<script type="text/javascript">
+	$(function () {
+		$('#startGoalIdDateTimePicker').datetimepicker(
+			{
+				format: 'MM/DD/YYYY HH:mm'
+			}
+		);
+		$('#stopGoalIdDateTimePicker').datetimepicker(
+			{
+				format: 'MM/DD/YYYY HH:mm'
+			}
+		);
+	});
+</script>
+{% endblock %}

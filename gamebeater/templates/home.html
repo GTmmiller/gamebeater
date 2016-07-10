@@ -1,10 +1,61 @@
 {% extends "base.html" %}
 {% block title %}Gamebeater{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Gamebeater</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+			    <li><a href="{% url 'login' %}">Login</a></li>
+	        </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+{% endblock %}
+
 {% block content %}
-<h1>Gamebeater</h1>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Gamebeater</h1>
+        <p>Is a simple website for managing your video game collection.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
 
-<p>Gamebeater is the cool webapp that lets you manage and track games you own and games you want to own and how you're doing on beating them! The fun doesn't stop once you beat the game. With Gamebeater's goals functions you can plan out beating a game and some extra goals like getting all of a game's achievement or even planning a speed run.</p>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Over 200+ Games To Choose From</h2>
+            <p>Gamebeater has all 200 games from Hardcore Gaming.net's 200 best games of all time! Not enough for you? Gamebeater can also add any game listed on Gamefaqs(comming soon).</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Set Goals, Beat Games</h2>
+            <p>Once you've added some games to Gamebeater the real fun begins! Make all kinds of goals towards beating a game or even for planning a speed run or a challenge run. Goals are defined by you so decide how you play your games!</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Open Source. Now and forever.</h2>
+            <p>Since Gamebeater is just a thing I'm making for myself I'll never charge for it and you can mess with the source all you want! Like books instead of video games? Make Bookreader! Like food? Foodeater! The possibilities are only limited by your imagination!</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
 
-<a href="{% url 'profiles:register' %}">Sign Up</a>
-<a href="{% url 'login' %}">Login</a>
+    <hr>
+
+    <footer>
+        <p>&copy; 2016 Steven Miller</p>
+    </footer>
+</div> <!-- /container -->
 {% endblock %}

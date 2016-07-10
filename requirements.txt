@@ -1,0 +1,4 @@
+Django==1.9.1
+django-widget-tweaks==1.4.1
+virtualenv==13.1.2
+

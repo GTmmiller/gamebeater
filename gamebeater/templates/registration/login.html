@@ -1,12 +1,47 @@
 {% extends "base.html" %}
+{% load widget_tweaks %}
+
 {% block title %}Gamebeater | Login{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">Gamebeater</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="{% url 'login' %}">Login</a></li>
+	        </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+{% endblock %}
+
 {% block content %}
 <h1>Login to your Gamebeater account</h1>
-<form id="form" method="post" action="{{ app_path }}" enctype="multipart/form-data">
+<form method="post" action="{{ app_path }}" enctype="multipart/form-data">
 	{% csrf_token %}
 	
-	{{ form.as_p }}
-	
-	<input type="submit" name="submit" value="Login" />
+	{{ form.non_field_errors }}
+	<div class="form-group">
+		{{ form.username.errors }}
+		<label class="control-label" for="{{ form.username.id_for_label }}">Username:</label>
+		{{ form.username|add_class:"form-control" }}
+	</div>
+	<div class="form-group">
+		{{ form.password.errors }}
+		<label class="control-label" for="{{ form.password.id_for_label }}">Password:</label>
+		{{ form.password|add_class:"form-control" }}
+	</div>
+	<div class="gamebeater-centeredBtn">
+		<input type="submit" class="btn btn-default" value="Login">
+	</div>
 </form>
 {% endblock %}

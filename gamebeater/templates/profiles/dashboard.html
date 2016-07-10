@@ -1,41 +1,153 @@
 {% extends "base.html" %}
+
+{% load status_list_filters %}
+{% load widget_tweaks %}
+
 {% block title %}Gamebeater | Dashboard{% endblock %}
-{% block content %}
-<h1>Dashboard</h1>
-<p>Welcome back {{gamebeaterprofile.user.username}}!</p>
 
-<p><a href="{% url 'profiles:add_games' %}">Add some games to your gamebeater!</a></p>
-
-<h2>Game Summary</h2>
-<ul>
-	<li>You have {{ gamebeaterprofile.games.count }} games in your gamebeater</li>
-	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
-	<li>{{ gameownerships_by_completion_status.object_list.count }} games({{ gameownerships_by_completion_status.status_percentage }}%) are {{ gameownerships_by_completion_status.status }}</li>
-	{% endfor %}
-</ul>
-<h2>Games To Beat</h2>
-<div class="pure-g">
-	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
-	<div class="pure-u-1-4">
-		<h3>{{ gameownerships_by_completion_status.status }}</h3>
-		{% for gameownership in gameownerships_by_completion_status.object_list %}
-		<div class="game-box">
-			<h4><a href="{% url 'profiles:update_ownership' gameownership.pk %}">{{ gameownership.game.title }}</a></h4>
-			<p><a href="{% url 'profiles:goal_dashboard' gameownership.pk%}">Goals</a></p>
-			<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
-	           {% csrf_token %}
-
-	           {{ completion_status_update_form.as_p }}
-
-	           <input type="submit" name="submit" value="Change Status" />
-            </form>
-            <form id="completion_form" method="post" action="{% url 'profiles:delete_ownership' gameownership.pk %}" enctype="multipart/form-data">
-	           {% csrf_token %}
-
-	           <input type="submit" name="submit" value="Delete Game" />
-            </form>
+{% block navbar %}
+<!-- Nav bar section -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{% url 'profiles:dashboard' %}">Gamebeater</a>
 		</div>
-		{% endfor %}
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Dashboard</a></li>
+				<li><a href="{% url 'profiles:add_games' %}">Add Games</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ request.user.username }}</a></li>
+				<li><a href="{% url 'logout' %}">Logout</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb text-muted gamebeater-breadcrumb">
+	<li><i>Dashboard</i></li>
+</ol>
+
+<h1>Statistics</h1>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="button" data-toggle="collapse"
+			data-target="#completionStatsBox" aria-expanded="false" aria-controls="completionStatsBox">
+				<h2 class="panel-title">
+					Completion Statistics
+					<span class="pull-right">
+						<div class="progress gamebeater-statbox-progress">			
+							{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
+							<div class="progress-bar {% cycle 'progress-bar-danger' 'progress-bar-striped' 'progress-bar-warning' 'progress-bar-striped progress-bar-success' %}" role="progressbar" aria-valuenow="{{ gameownerships_by_completion_status.status_percentage }}" 
+							aria-valuemin="0" aria-valuemax="100" style="width:{{ gameownerships_by_completion_status.status_percentage }}%">
+								<span class="sr-only">{{ gameownerships_by_completion_status.status_percentage }}% {{ gameownerships_by_completion_status.status }}</span>
+							</div>
+							{% endfor %}
+						</div>
+					</span>
+				</h2> 							
+			</div>
+			<div id="completionStatsBox" class="panel-collapse collapse">
+				<!-- gamebeater-statpanel-->
+				<ul class="panel-body list-group">
+					{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
+					<li class="list-group-item">
+						{{ gameownerships_by_completion_status.status }}: {{ gameownerships_by_completion_status.status_percentage }}%
+						<span class="pull-right">
+							<div class="progress gamebeater-statbox-progress">
+								<div class="progress-bar gamebeater-statbox-invisibleProgressBar" role="progressbar" style="width:{{ gameownerships_by_completion_status_list|previous_status_percentage:forloop.counter0 }}%">
+								</div>
+								<div class="progress-bar {% cycle 'progress-bar-danger' 'progress-bar-striped' 'progress-bar-warning' 'progress-bar-striped progress-bar-success' %}" role="progress-bar" aria-valuenow="{{ gameownerships_by_completion_status.status_percentage }}"
+								aria-valuemin="0" aria-maxvalue="100" style="width:{{ gameownerships_by_completion_status.status_percentage }}%;">
+									<span class="sr-only">{{ gameownerships_by_completion_status.status_percentage }}% {{ gameownerships_by_completion_status.status }}</span>
+								</div>
+							</div>
+						</span>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1>Games</h1>
+
+<div class="row">
+	{% for gameownerships_by_completion_status in gameownerships_by_completion_status_list %}
+	<div class="col-md-3">
+		<div class="panel {% cycle 'panel-danger' 'panel-primary' 'panel-warning' 'panel-success' %}">
+			<div class="panel-heading" role="button" data-toggle="collapse"
+			data-target="#{{ gameownerships_by_completion_status.status|slugify }}Panel" aria-expanded="false" aria-controls="{{ gameownerships_by_completion_status.status|slugify }}Panel">
+				<h2 class="gamebeater-completionPanel-panelHeader">{{ gameownerships_by_completion_status.status }} <span class="badge">{{ gameownerships_by_completion_status.object_list.count }}</span></h2>
+			</div>
+			<div id="{{ gameownerships_by_completion_status.status|slugify }}Panel" class="panel-body panel-collapse collapse in">
+				{% for gameownership in gameownerships_by_completion_status.object_list %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3>
+							<a href="{% url 'profiles:update_ownership' gameownership.pk %}">{{ gameownership.game.title }}</a>
+							<span class="pull-right">
+								<form id="completion_form" method="post" action="{% url 'profiles:delete_ownership' gameownership.pk %}" enctype="multipart/form-data">
+									{% csrf_token %}
+									<div class="form-group">
+										<button class="btn btn-default" type="submit" name="submit">
+											<span class="glyphicon glyphicon-remove"></span>
+										</button>
+									</div>
+								</form>
+							</span>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="btn-group btn-group-justified gamebeater-completionPanel-goalBtn">
+							<a class="btn btn-default" href="{% url 'profiles:goal_dashboard' gameownership.pk %}">Goals <span class="badge">{{ gameownership.goal_set.count }}</span></a>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading gamebeater-centeredBtn" class="panel-heading" role="button" data-toggle="collapse"
+							data-target="#{{ gameownership.game.title|slugify }}Genres" aria-expanded="false" aria-controls="{{ gameownership.game.title|slugify }}Genres">
+								Genres <span class="badge">{{ gameownership.game.genres.all.count }}</span>
+							</div>
+							<div id="{{ gameownership.game.title|slugify }}Genres" class="panel-collapse collapse">
+								<ul class="panel-body list-group">
+									{% for genre in gameownership.game.genres.all %}
+									<li class="list-group-item">{{ genre.name }}</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+						<form id="completion_form" method="post" action="{% url 'profiles:completion_status_update' gameownership.pk %}" enctype="multipart/form-data">
+							{% csrf_token %}
+
+							{{ completion_status_update_form.non_field_errors }}
+							<div class="form-group">
+								{{ completion_status_update_form.completion_status.errors }}
+								<label class="control-label" for="{{ completion_status_update_form.completion_status.id_for_label }}">Completion Status:</label>
+								{{ completion_status_update_form.completion_status|add_class:"form-control gamebeater-option"}}
+							</div>
+
+							<div class="gamebeater-centeredBtn">
+								<button class="btn btn-default" type="submit" name="submit">
+									Change Status
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 	{% endfor %}
 </div>

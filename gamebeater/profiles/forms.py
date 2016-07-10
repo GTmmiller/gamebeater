@@ -30,18 +30,12 @@ class GameOwnershipUpdateForm(forms.ModelForm):
         model = GameOwnership
         fields = ('platform', 'ownership_status', 'completion_status')
 
-class GoalStatusUpdateForm(forms.ModelForm):
-
-    class Meta:
-        model = Goal
-        fields = ('status',)
-
-class GoalCreationForm(forms.ModelForm):
+class GoalForm(forms.ModelForm):
 
     class Meta:
         model = Goal 
         fields = ('ownership', 'text', 'start_time', 'complete_time', 'status')
-        widgets = {'ownership': forms.HiddenInput(), 'start_time': forms.DateTimeInput(), 'complete_time': forms.DateTimeInput()}
+        widgets = {'ownership': forms.HiddenInput()}
 
 class GoalCompletionStatusUpdateForm(forms.ModelForm):
 

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+{% block title %}Gamebeater | Update Goal{% endblock %}
+
+{% block pagestylesheets %}
+<link rel="stylesheet" href="{% static 'css/vendor/bootstrap-datetimepicker-4.17.37.min.css' %}">
+{% endblock%}
+
+{% block navbar %}
+<!-- Nav bar section -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{% url 'profiles:dashboard' %}">Gamebeater</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="{% url 'profiles:dashboard' %}">Dashboard</a></li>
+				<li><a href="{% url 'profiles:add_games' %}">Add Games</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ request.user.username }}</a></li>
+				<li><a href="{% url 'logout' %}">Logout</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<ol class="breadcrumb gamebeater-breadcrumb text-muted">
+    <li><a href="{% url 'profiles:dashboard' %}"><i>Dashboard</i></a></li>
+    <li><a href="{% url 'profiles:goal_dashboard' goal_object.ownership.pk  %}"><i>Joust Goals</i></a></li>
+    <li><i>{{ goal_object.text }}</i></li>
+</ol>
+
+<h1>{{ goal_object.text }}</h1>
+<form id="completion_form" method="post" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{ form.non_field_error }}
+    {{ form.ownership }}
+    <div class="form-group">
+        {{ form.text.errors }}
+        <label class="control-label" for="{{ form.text.id_for_label }}">
+            Goal:
+        </label>
+        {{ form.text|add_class:"form-control" }}
+    </div>
+    <div class="form-group">
+        {{ form.status.errors }}
+        <label class="control-label" for="{{ form.status.id_for_label }}" >
+            Completion Status:
+        </label>
+        {{ form.status|add_class:"form-control"}}
+    </div>				
+    <div class="form-group">
+        {{ form.start_time.errors }}
+        <label class="control-label" for="{{ form.start_time.id_for_label }}">
+            Start Time: {{ goal_object.start_time }}
+        </label>
+        <div class="input-group date" id="startGoalIdDateTimePicker">
+            {{ form.start_time|add_class:"form-control" }}
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form.complete_time.errors }}
+        <label class="control-label" for="{{ form.complete_time.id_for_label }}">
+            Complete Time: {{ goal_object.complete_time }}
+        </label>
+        <div class="input-group date" id="stopGoalIdDateTimePicker">
+            {{ form.complete_time|add_class:"form-control" }}
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+        </div>
+    </div>
+    <div class="gamebeater-centeredBtn">
+        <button type="submit" class="btn btn-default">
+            Update Goal
+        </button>
+    </div>
+</form>
+{% endblock %}
+
+{% block pagejavascript %}
+<script src="{% static 'js/vendor/moment-2.12.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap-datetimepicker-4.17.37.min.js' %}"></script>
+<script type="text/javascript">
+	$(function () {
+		$('#startGoalIdDateTimePicker').datetimepicker(
+			{
+				format: 'MM/DD/YYYY HH:mm'
+			}
+		);
+		$('#stopGoalIdDateTimePicker').datetimepicker(
+			{
+				format: 'MM/DD/YYYY HH:mm'
+			}
+		);
+	});
+</script>
+{% endblock %}

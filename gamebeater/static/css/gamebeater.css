@@ -1,0 +1,53 @@
+.gamebeater-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.gamebeater-breadcrumb {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+/* Replaces style="min-width: 15em;"*/
+.gamebeater-statbox-progress {
+	min-width: 15em;
+}
+
+.gamebeater-statbox-invisibleProgressBar {
+	opacity: 0.0;
+	filter: alpha(opacity=0);
+}
+
+.gamebeater-statbox-lighterProgressBar {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.gamebeater-completionPanel-panelHeader {
+	text-align: center;
+}
+
+.gamebeater-completionPanel-goalBtn {
+	margin-bottom: 20px;
+}
+
+.gamebeater-option {
+	margin-bottom: 10px;
+}
+
+.gamebeater-centeredBtn {
+	text-align: center;
+}
+
+.gamebeater-goalPanel-input {
+	margin-bottom: 10px;
+}
+
+.gamebeater-completionPanel-goalHeading {
+	font-size: 16px;
+}
+
+.gamebeater-goalPanel-timestamp {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}

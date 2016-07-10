@@ -1,0 +1,16 @@
+[
+  {
+    "pk": 201,
+    "model": "games.game",
+    "fields": {
+      "genres": [
+        "Shoot 'em up",
+        "Role-playing"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "title": "Undertale"
+    }
+  }
+]

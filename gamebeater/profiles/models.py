@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+from django.core.urlresolvers import reverse
 
 from games.models import Game, Platform
 from .statuses import CompletionStatus, OwnershipStatus, ObjectsByStatus
@@ -76,6 +77,12 @@ class Goal(models.Model):
         choices=CompletionStatus.CHOICES,
         default=CompletionStatus.NOT_STARTED
     )
+
+    def get_goal_dashboard_url(self):
+        return reverse('profiles:goal_dashboard', kwargs={'pk': self.ownership.pk})
+
+    def get_absolute_url(self):
+        return reverse('profiles:update_goal', kwargs={'pk': self.pk})
 
     def __unicode__(self):
         return self.text
