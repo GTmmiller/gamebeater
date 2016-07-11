@@ -63,3 +63,9 @@ venv/*
 
 # Local Database
 *.sqlite3
+
+# Static Files
+gamebeater/staticfiles/
+
+# Environment
+.env
