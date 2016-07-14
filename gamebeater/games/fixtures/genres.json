@@ -432,5 +432,12 @@
     "fields": {
       "description": "There's no description for this genre yet."
     }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Top-down shooter",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
   }
 ]
