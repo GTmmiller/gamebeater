@@ -1,1 +1,1 @@
-web: gunicorn gamebeater.gamebeater.wsgi
+web: gunicorn --pythonpath gamebeater gamebeater.wsgi
