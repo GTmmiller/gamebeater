@@ -1,1 +1,1 @@
-web: gunicorn gamebeater.wsgi
+web: gunicorn gamebeater.gamebeater.wsgi
