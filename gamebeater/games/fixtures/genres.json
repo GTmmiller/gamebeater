@@ -439,5 +439,19 @@
     "fields": {
       "description": "There's no description for this genre yet."
     }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Sports",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Pinball",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
   }
 ]
