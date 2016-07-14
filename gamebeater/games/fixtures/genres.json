@@ -418,5 +418,12 @@
     "fields": {
       "description": "There's no description for this genre yet."
     }
+  },
+  {
+    "model": "games.genre",
+    "pk": "Cinematic Platformer",
+    "fields": {
+      "description": "There's no description for this genre yet."
+    }
   }
 ]
